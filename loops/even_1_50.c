@@ -1,0 +1,20 @@
+//  Print even numbers from 1 to 50
+
+#include <stdio.h>
+
+void main()
+{
+   int n;
+
+
+     for(n = 1; n <= 50; n++)
+     {
+        if(n % 2 == 0)
+            printf("%d ", n);
+     }
+
+     for(n = 2; n <= 50; n += 2)
+     {
+         printf("%d ", n);
+     }
+}
