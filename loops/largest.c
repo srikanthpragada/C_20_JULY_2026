@@ -1,0 +1,21 @@
+//  Take 5 numbers and print largest number
+
+#include <stdio.h>
+
+void main()
+{
+   int n, i, largest = 0;
+
+
+   for(i = 1;i <= 5; i++)
+   {
+     printf("Enter a number :");
+     scanf("%d",&n);
+
+     if(n > largest)
+        largest = n;
+   }
+
+   printf("Largest = %d", largest);
+
+}
