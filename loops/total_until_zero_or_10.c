@@ -1,13 +1,13 @@
-//  Take numbers until 0 is given and print total
+//  Take 10 numbers or until 0 is given and print total
 
 #include <stdio.h>
 
 void main()
 {
-   int n, total = 0;
+   int n, i, total = 0;
 
 
-   while(1)
+   for(i = 1;i <= 10; i++)
    {
      printf("Enter a number [0 to stop] :");
      scanf("%d",&n);
