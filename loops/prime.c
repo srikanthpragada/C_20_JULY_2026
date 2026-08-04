@@ -4,7 +4,7 @@
 
 void main()
 {
-   int n, i;
+   int n, i, prime = 1;
 
 
     printf("Enter a number :");
@@ -15,11 +15,12 @@ void main()
       if (n % i == 0) // found a factor
       {
           printf("Not prime as it has %d as a factor",i);
+          prime = 0;
           break;
       }
     }
 
-    if (i > n/2)
+    if (prime)
         printf("Prime number!");
 
 
