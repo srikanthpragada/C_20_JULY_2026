@@ -6,7 +6,8 @@
 
 void main()
 {
-   char ch,i, count = 0;
+   char ch,i;
+   int total = 0;
 
 
      for(i=1; i <= 5; i ++)
@@ -14,9 +15,8 @@ void main()
         printf("\nEnter char :");
         ch = getche();
 
-        if(isupper(ch))
-            count ++;
+        total += ch;
      }
 
-     printf("\nCount = %d", count);
+     printf("\nTotal = %d", total);
 }
