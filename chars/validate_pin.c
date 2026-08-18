@@ -10,7 +10,6 @@ void main()
    int i, count = 0;
 
 
-
       printf("Enter PIN :");
 
       for(i = 1; i <= 4; i ++)
