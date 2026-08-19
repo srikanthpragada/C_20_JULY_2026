@@ -8,7 +8,7 @@
 void main()
 {
    char ch;
-   int i, digit = 0, upper = 0;
+   int i, digit = 0, upper = 0, special = 0;
 
 
       printf("Enter Password :");
@@ -23,6 +23,9 @@ void main()
          else
            if(isupper(ch))
                upper = 1;
+           else
+              if(ch == '*' || ch == '#' || ch == '_' || ch == '@')
+                   special = 1;
       }
 
 
@@ -32,7 +35,10 @@ void main()
       if(!upper)
          printf("\nUpper is missing!");
 
-      if(digit && upper)
+      if(!special)
+         printf("\nSpecial char is missing!");
+
+      if(digit && upper && special)
          printf("\nValid Password!");
 
 
