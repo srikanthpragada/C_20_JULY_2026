@@ -1,4 +1,4 @@
-// Take a string and print each word on a separate line
+// Take a string and print word count
 
 #include <stdio.h>
 #include <ctype.h>
@@ -7,7 +7,7 @@
 void main()
 {
   char s[50];
-  int i;
+  int i, count = 1;
 
 
     printf("Enter a string :");
@@ -16,11 +16,9 @@ void main()
     for(i = 0;s[i] != '\0'; i ++)
     {
         if(s[i] == ' ')
-            putch('\n');
-        else
-            putch(s[i]);
+            count ++;
     }
 
-
+    printf("Count = %d", count);
 
 }
