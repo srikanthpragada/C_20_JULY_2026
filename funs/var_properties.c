@@ -6,6 +6,8 @@ int g = 1; // global variable
 void f()
 {
   int a = 10;
+  int g = 100;
+
 
      g++;
 
